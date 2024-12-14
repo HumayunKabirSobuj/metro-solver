@@ -7,9 +7,9 @@ import icon4 from '../HomePagePhoto/icon4.png'
 import icon5 from '../HomePagePhoto/icon5.png'
 const ContactForm = () => {
   return (
-    <div className=" p-8 md:p-12 lg:p-16 rounded-lg flex flex-col lg:flex-row items-center gap-10">
+    <div className=" p-8 md:p-12 lg:p-16 rounded-lg flex flex-col lg:flex-row items-center justify-between gap-10">
       {/* Left Side Content */}
-      <div className="rounded-[30px] p-6 md:p-8 lg:p-10 bg-gradient-to-r from-[#5C258D] to-[#4389A2] shadow-lg text-white">
+      <div className="rounded-[30px] p-6 md:p-8 lg:p-10 bg-gradient-to-r from-[#5C258D] to-[#4389A2] shadow-lg text-white flex-1 w-full">
         {/* Card Content */}
         <div className="flex justify-center mt-10 mb-7">
           <img src={logo} alt="" />
@@ -28,13 +28,13 @@ const ContactForm = () => {
       </div>
 
       {/* Right Side Contact Form */}
-      <form className="w-full lg:w-1/2 space-y-4">
+      <form className="lg:w-1/2 space-y-4 flex-1 w-full">
         {/* Name and Email */}
         <div className="flex flex-col md:flex-row gap-4">
           <div className="w-full">
             <label
               htmlFor="name"
-              className="block text-white mb-2 font-semibold"
+              className="block text-white mb-2 font-semibold text-xs"
             >
               Name
             </label>
@@ -48,7 +48,7 @@ const ContactForm = () => {
           <div className="w-full">
             <label
               htmlFor="email"
-              className="block text-white mb-2 font-semibold"
+              className="block text-white mb-2 font-semibold text-xs"
             >
               Email Address
             </label>
@@ -66,7 +66,7 @@ const ContactForm = () => {
           <div className="w-full">
             <label
               htmlFor="phone"
-              className="block text-white mb-2 font-semibold"
+              className="block text-white mb-2 font-semibold text-xs"
             >
               WhatsApp/Phone
             </label>
@@ -80,7 +80,7 @@ const ContactForm = () => {
           <div className="w-full">
             <label
               htmlFor="services"
-              className="block text-white mb-2 font-semibold"
+              className="block text-white mb-2 font-semibold text-xs"
             >
               Which are You Looking for Support in?
             </label>
@@ -100,7 +100,7 @@ const ContactForm = () => {
         <div>
           <label
             htmlFor="message"
-            className="block text-white mb-2 font-semibold"
+            className="block text-white mb-2 font-semibold text-xs"
           >
             How Can We Help?
           </label>
@@ -116,8 +116,8 @@ const ContactForm = () => {
         <div className="flex justify-center">
           <button className=" text-xl text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-1 px-32 flex items-center justify-center">
             <img src={star} alt="" />
-            <div className="flex items-center">
-              <p>Send</p>
+            <div className="flex items-center gap-1">
+              <p>Send </p>
               <p>Message</p>
             </div>
           </button>
