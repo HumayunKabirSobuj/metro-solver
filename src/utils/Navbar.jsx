@@ -3,7 +3,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 function Navbar() {
   return (
-    <nav className="text-white py-4">
+    <nav className="text-white py-4 mb-10">
       <div className="mx-auto">
         <ul className="flex w-full items-center justify-center border-b border-[#2B1E36]">
           <li className="text-yellow-400 text-center cursor-pointer flex-1 text-[18px]">
