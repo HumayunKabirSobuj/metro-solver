@@ -1,4 +1,4 @@
-import navLogo from "../../public/navLogo.png";
+import Logo from "../../public/Logo.png";
 import { IoIosArrowDown } from "react-icons/io";
 
 function Navbar() {
@@ -22,7 +22,7 @@ function Navbar() {
           </li>
           <li className="text-white font-bold text-center cursor-pointer flex-1 border-l border-r border-[#2B1E36] px-4 text-[18px]">
             <img
-              src={navLogo}
+              src={Logo}
               alt="Metro Solver"
               className="mx-auto h-10 py-1 items-center"
             />

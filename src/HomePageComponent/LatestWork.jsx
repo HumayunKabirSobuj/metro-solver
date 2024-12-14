@@ -50,13 +50,8 @@ const LatestWork = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-          <div className=" shadow-lg w-full h-[18.5rem] object-cover">
-              <img
-                src={img}
-                alt="Work 5"
-                className='rounded-3xl'
-                
-              />
+            <div className=" shadow-lg w-full h-[18.5rem] object-cover">
+              <img src={img} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -81,13 +76,8 @@ const LatestWork = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-          <div className=" shadow-lg w-full h-[18.5rem] object-cover">
-              <img
-                src={img4}
-                alt="Work 5"
-                className='rounded-3xl'
-                
-              />
+            <div className=" shadow-lg w-full h-[18.5rem] object-cover">
+              <img src={img4} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
         </Swiper>
@@ -108,43 +98,23 @@ const LatestWork = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-          <div className=" shadow-lg w-[405px] h-[42.5rem] object-cover">
-              <img
-                src={img5}
-                alt="Work 5"
-                className='rounded-3xl'
-                
-              />
+            <div className=" shadow-lg w-[405px] h-[42.5rem] object-cover">
+              <img src={img5} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className=" shadow-lg w-[405px] h-[42.5rem] object-cover">
-              <img
-                src={img6}
-                alt="Work 5"
-                className='rounded-3xl'
-                
-              />
+            <div className=" shadow-lg w-[405px] h-[42.5rem] object-cover">
+              <img src={img6} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className=" shadow-lg w-[405px] h-[42.5rem] object-cover">
-              <img
-                src={img7}
-                alt="Work 5"
-                className='rounded-3xl'
-                
-              />
+            <div className=" shadow-lg w-full h-[42.5rem] object-cover">
+              <img src={img7} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className=" shadow-lg w-[405px] h-[42.5rem] object-cover">
-              <img
-                src={img8}
-                alt="Work 5"
-                className='rounded-3xl'
-                
-              />
+            <div className=" shadow-lg w-full h-[42.5rem] object-cover">
+              <img src={img8} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
         </Swiper>
@@ -169,12 +139,7 @@ const LatestWork = () => {
         >
           <SwiperSlide>
             <div className=" shadow-lg w-full h-[18.5rem] object-cover">
-              <img
-                src={img13}
-                alt="Work 5"
-                className='rounded-3xl'
-                
-              />
+              <img src={img13} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -199,13 +164,8 @@ const LatestWork = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-          <div className=" shadow-lg w-full h-[18.5rem] object-cover">
-              <img
-                src={img9}
-                alt="Work 5"
-                className='rounded-3xl'
-                
-              />
+            <div className=" shadow-lg w-full h-[18.5rem] object-cover">
+              <img src={img9} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
         </Swiper>
