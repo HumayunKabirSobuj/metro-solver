@@ -1,5 +1,6 @@
 import Banner from '../HomePageComponent/Banner';
 import HowToWorks from '../HomePageComponent/HowToWorks';
+import WhyChoose from '../HomePageComponent/WhyChoose';
 import ReviewsSlider from '../HomePageComponent/ReviewsSlider';
 import Navbar from '../utils/Navbar';
 
@@ -11,6 +12,7 @@ const Home = () => {
         <Navbar></Navbar>
         <Banner></Banner>
         <HowToWorks />
+        <WhyChoose />
         <ReviewsSlider></ReviewsSlider>
       </div>
     </div>
