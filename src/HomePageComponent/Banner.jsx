@@ -3,11 +3,12 @@ import banner2 from "../HomePagePhoto/banner2.jpg";
 import brembo from "../HomePagePhoto/brembo.png";
 import luminus from "../HomePagePhoto/luminus.png";
 import motorola from "../HomePagePhoto/motorola.png";
+import banner3 from "../HomePagePhoto/banner3.png";
 
 const Banner = () => {
   return (
     <div>
-      <div>
+      <div className="mb-14">
         <div className=" items-center px-10 mb-8 grid grid-cols-3">
           <h1 className="text-white font-semibold text-8xl col-span-1">
             Creative
@@ -37,7 +38,7 @@ const Banner = () => {
       {/* Middle */}
       <div className="flex items-center mb-20">
         {/* Left Section */}
-        <div className="w-1/2 h-[400px] p-8 bg-white text-gray-900">
+        <div className="w-1/2 h-[450px] p-8 bg-white text-gray-900 rounded-l-2xl">
           <h2 className="text-[90px] font-semibold text-[#10192A]">
             30M <span className="text-yellow-500">+</span>
           </h2>
@@ -52,9 +53,19 @@ const Banner = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-1/2 h-[400px] overflow-hidden">
+        <div className="w-1/2 h-[450px] overflow-hidden">
           <img
             src={banner2}
+            alt="banner"
+            className="w-full h-full object-fill"
+          />
+        </div>
+
+        {/* Right Section */}
+
+        <div className="w-1/2 h-[450px] overflow-hidden">
+          <img
+            src={banner3}
             alt="banner"
             className="w-full h-full object-fill"
           />
