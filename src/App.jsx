@@ -5,8 +5,8 @@ function App() {
  
 
   return (
-   <div>
-   <h1 className='text-3xl font-bold underline'>hello</h1>
+   <div className='bg-custom-gradient'>
+   <h1 className='text-3xl font-bold underline py-80 '>hello</h1>
    </div>
   )
 }
