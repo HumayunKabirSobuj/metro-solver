@@ -1,7 +1,7 @@
 import { useRef } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import star from "../HomePagePhoto/reviewsStar.png";
+// import star from "../HomePagePhoto/reviewsStar.png";
 import line from "../HomePagePhoto/line.png";
 import reviewsPerson from "../HomePagePhoto/reviewsPerson.jpg";
 
