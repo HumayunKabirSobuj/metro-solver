@@ -12,7 +12,7 @@ import card7 from "../HomePagePhoto/serviceBuy.png";
 import card8 from "../HomePagePhoto/serviceMarchendise.png";
 import card9 from "../HomePagePhoto/serviceProxy.png";
 import card10 from "../HomePagePhoto/serviceAcademy.png";
-import card11 from "../HomePagePhoto/serviceCombo.png";
+import card11 from "../HomePagePhoto/Frame (7).png";
 const OurService = () => {
   return (
     <div className="lg:pb-[80px] md:pb-[50px] pb-[20px]">
