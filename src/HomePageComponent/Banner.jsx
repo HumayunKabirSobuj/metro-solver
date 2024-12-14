@@ -66,16 +66,6 @@ const Banner = () => {
           />
         </div>
 
-        {/* Right Section */}
-
-        {/* <div className="w-1/2 h-[450px] overflow-hidden">
-          <img
-            src={banner3}
-            alt="banner"
-            className="w-full h-full object-fill"
-          />
-        </div> */}
-
         <div className="relative w-1/2 h-[450px] overflow-hidden bg-black text-white">
           {/* Background Image */}
           <img
