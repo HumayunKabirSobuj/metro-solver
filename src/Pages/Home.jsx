@@ -1,5 +1,6 @@
 import Banner from '../HomePageComponent/Banner';
 import HowToWorks from '../HomePageComponent/HowToWorks';
+import WhyChoose from '../HomePageComponent/WhyChoose';
 import Navbar from '../utils/Navbar';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         <Navbar></Navbar>
         <Banner></Banner>
         <HowToWorks />
+        <WhyChoose />
       </div>
     </div>
   );
