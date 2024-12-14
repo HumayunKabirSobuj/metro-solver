@@ -4,6 +4,11 @@ import brembo from "../HomePagePhoto/brembo.png";
 import luminus from "../HomePagePhoto/luminus.png";
 import motorola from "../HomePagePhoto/motorola.png";
 import banner3 from "../HomePagePhoto/banner3.png";
+import banner4 from "../HomePagePhoto/banner4.png";
+import banner5 from "../HomePagePhoto/banner5.png";
+import banner6 from "../HomePagePhoto/banner6.png";
+import banner7 from "../HomePagePhoto/banner7.png";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Banner = () => {
   return (
@@ -63,12 +68,75 @@ const Banner = () => {
 
         {/* Right Section */}
 
-        <div className="w-1/2 h-[450px] overflow-hidden">
+        {/* <div className="w-1/2 h-[450px] overflow-hidden">
           <img
             src={banner3}
             alt="banner"
             className="w-full h-full object-fill"
           />
+        </div> */}
+
+        <div className="relative w-1/2 h-[450px] overflow-hidden bg-black text-white">
+          {/* Background Image */}
+          <img
+            src={banner3}
+            alt="banner"
+            className="w-full h-full object-fill opacity-20"
+          />
+
+          {/* Content */}
+          <div className="absolute top-0 left-0 p-5">
+            <h2 className="text-[32px] text-[#E7E8EA] font-semibold ">
+              TASKS DONE
+            </h2>
+          </div>
+
+          {/* Percentage */}
+          <div className="absolute top-16 left-5 flex items-center">
+            <span className="text-[80px] font-medium flex items-center">
+              {" "}
+              <img src={banner4} alt="" /> 22%
+            </span>
+          </div>
+
+          {/* Graph */}
+          <div className="absolute bottom-24 left-0 right-0 flex items-center justify-center">
+            {/* Line Graph Example */}
+            <img src={banner6} alt="" />
+           
+          </div>
+          <div className="absolute bottom-32 left-0 right-0 flex items-center justify-center">
+            {/* Line Graph Example */}
+            <img src={banner7} alt="" />
+           
+          </div>
+
+          {/* Done and End Progress */}
+          <div className="absolute bottom-5 left-5 flex gap-5">
+            <div className="flex items-center justify-between gap-2">
+              <span className="block w-3 h-3 bg-yellow-400 rounded-full"></span>
+              <span className="text-2xl font-semibold">DONE</span>
+            </div>
+          </div>
+          <div className="absolute bottom-5 right-5 flex gap-5">
+            <div className="flex items-center gap-2">
+              <span className="block w-3 h-3 bg-blue-500 rounded-full"></span>
+              <span className="text-2xl font-semibold">IN PROGRESS</span>
+            </div>
+          </div>
+
+          {/* Button */}
+          <div className="absolute top-5 right-5">
+            <button className="rounded-[50px] bg-[#FCB635] text-[18px] font-medium py-2 px-5 text-white flex items-center gap-1">
+              <p>Weak</p>
+              <IoIosArrowDown />
+            </button>
+          </div>
+
+          {/* Chat Icon */}
+          <div className="absolute bottom-36 right-8 bg-yellow-400 rounded-full p-4">
+            <img src={banner5} alt="" className="object-fill" />
+          </div>
         </div>
       </div>
 
