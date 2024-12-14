@@ -4,6 +4,7 @@ import WhyChoose from '../HomePageComponent/WhyChoose';
 import ReviewsSlider from '../HomePageComponent/ReviewsSlider';
 import Navbar from '../utils/Navbar';
 import OurService from '../HomePageComponent/OurService';
+import ContactForm from '../HomePageComponent/ContactForm';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <WhyChoose />
         <ReviewsSlider></ReviewsSlider>
         <OurService></OurService>
+        <ContactForm></ContactForm>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ import card10 from "../HomePagePhoto/serviceAcademy.png";
 import card11 from "../HomePagePhoto/serviceCombo.png";
 const OurService = () => {
   return (
-    <div>
+    <div className="lg:pb-[80px] md:pb-[50px] pb-[20px]">
       <div className="space-y-4 pb-12">
         <h1 className="text-6xl font-semibold text-white text-center">
           Our Service
