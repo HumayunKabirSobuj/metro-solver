@@ -9,7 +9,7 @@ import handshake from '../HomePagePhoto/handshake.png';
 import hands from '../HomePagePhoto/hands.png';
 const HowToWorks = () => {
   return (
-    <div className="mt-24 text-white">
+    <div className="mt-24  text-white">
       <div className="text-center">
         <h2 className="text-6xl font-semibold text-white">How To Works?</h2>
         <p className="text-[#F3F3F4] text-lg font-normal mt-4 w-[40rem]]">

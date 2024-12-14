@@ -3,6 +3,7 @@ import HowToWorks from '../HomePageComponent/HowToWorks';
 import WhyChoose from '../HomePageComponent/WhyChoose';
 import ReviewsSlider from '../HomePageComponent/ReviewsSlider';
 import Navbar from '../utils/Navbar';
+import LatestWork from '../HomePageComponent/LatestWork';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Banner></Banner>
         <HowToWorks />
         <WhyChoose />
+        <LatestWork />
         <ReviewsSlider></ReviewsSlider>
       </div>
     </div>
