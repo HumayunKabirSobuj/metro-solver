@@ -1,38 +1,39 @@
-import star from "../HomePagePhoto/star.png";
-import banner2 from "../HomePagePhoto/banner2.jpg";
-import brembo from "../HomePagePhoto/brembo.png";
-import luminus from "../HomePagePhoto/luminus.png";
-import motorola from "../HomePagePhoto/motorola.png";
-import banner3 from "../HomePagePhoto/banner3.png";
-import banner4 from "../HomePagePhoto/banner4.png";
-import banner5 from "../HomePagePhoto/banner5.png";
-import banner6 from "../HomePagePhoto/banner6.png";
-import banner7 from "../HomePagePhoto/banner7.png";
-import { IoIosArrowDown } from "react-icons/io";
+import star from '../HomePagePhoto/star.png';
+import banner2 from '../HomePagePhoto/banner2.jpg';
+import brembo from '../HomePagePhoto/brembo.png';
+import luminus from '../HomePagePhoto/luminus.png';
+import motorola from '../HomePagePhoto/motorola.png';
+import banner3 from '../HomePagePhoto/banner3.png';
+import banner4 from '../HomePagePhoto/banner4.png';
+import banner5 from '../HomePagePhoto/banner5.png';
+import banner6 from '../HomePagePhoto/banner6.png';
+import banner7 from '../HomePagePhoto/banner7.png';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const Banner = () => {
   return (
     <div>
-      <div className="mb-14">
-        <div className=" items-center px-10 mb-8 grid grid-cols-3">
-          <h1 className="text-white font-semibold text-8xl col-span-1">
+      <div className="mb-14 flex items-center">
+        <div className=" items-center gap-8 px-10 mb-8 lg:flex flex-col">
+          <h1 className="text-white font-semibold text-4xl lg:text-8xl col-span-1">
             Creative
           </h1>
-          <p className="text-[#E7E8EA] text-xl font-medium col-span-2">
-            We specialise in delivering ready-to-use websites, mobile
-            applications, and comprehensive online business services. We are the
-            agency that pushes boundaries to find the most original, most
-            thoughtful solutions.
-          </p>
+          <button className=" text-2xl text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-2 px-7 flex items-center">
+            <img src={star} alt="" />
+            Book A Free Consulting
+          </button>
         </div>
-        <div className="px-10 items-center grid grid-cols-3  ">
-          <div className="col-span-1">
-            <button className=" text-2xl text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-2 px-7 flex items-center">
-              <img src={star} alt="" />
-              Book A Free Consulting
-            </button>
+        <div className="px-10 items-center gap-4 lg:flex flex-col ">
+          <div>
+            <p className="text-[#E7E8EA] text-xl font-medium ">
+              We specialise in delivering ready-to-use websites, mobile
+              applications, and comprehensive the <br /> online business services. We
+              are the agency that pushes boundaries to find the most original,
+              most thoughtfulBased on the description of Metro Solver and the
+              image provided.
+            </p>
           </div>
-          <div className="col-span-2 w-full">
+          <div className=" w-full">
             <h1 className="text-white  font-normal text-[90px] ">
               DIGITAL AGENCY
             </h1>
@@ -84,7 +85,7 @@ const Banner = () => {
           {/* Percentage */}
           <div className="absolute top-16 left-5 flex items-center">
             <span className="text-[80px] font-medium flex items-center">
-              {" "}
+              {' '}
               <img src={banner4} alt="" /> 22%
             </span>
           </div>
@@ -93,12 +94,10 @@ const Banner = () => {
           <div className="absolute bottom-24 left-0 right-0 flex items-center justify-center">
             {/* Line Graph Example */}
             <img src={banner6} alt="" />
-           
           </div>
           <div className="absolute bottom-32 left-0 right-0 flex items-center justify-center">
             {/* Line Graph Example */}
             <img src={banner7} alt="" />
-           
           </div>
 
           {/* Done and End Progress */}
