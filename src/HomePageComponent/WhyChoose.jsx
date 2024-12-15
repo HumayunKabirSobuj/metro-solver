@@ -11,7 +11,7 @@ const WhyChoose = () => {
           personal real estate sanctuary, where finding the ideal home is
           effortless and comfortable with our assistance.
         </p>
-        <button className=" text-sxl text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-2 px-7 flex items-center">
+        <button className=" text-2xl text-white font-normal rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-4 px-9 flex items-center">
           <img className="w-8 h-8" src={star} alt="" />
           Book now
         </button>

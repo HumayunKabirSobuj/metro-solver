@@ -1,27 +1,27 @@
-import { useRef } from "react";
+import { useRef } from 'react';
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 // import star from "../HomePagePhoto/reviewsStar.png";
-import line from "../HomePagePhoto/line.png";
-import reviewsPerson from "../HomePagePhoto/reviewsPerson.jpg";
+import line from '../HomePagePhoto/line.png';
+import reviewsPerson from '../HomePagePhoto/reviewsPerson.jpg';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-import "./reviewsSliderStyle.css";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { RiDoubleQuotesL } from "react-icons/ri";
+import './reviewsSliderStyle.css';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { RiDoubleQuotesL } from 'react-icons/ri';
 const ReviewsSlider = () => {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty("--progress", 1 - progress);
+    progressCircle.current.style.setProperty('--progress', 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <div className="pb-20">
+    <div className="pb-20 mt-20">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -145,9 +145,15 @@ const ReviewsSlider = () => {
               </div>
             </div>
 
-            <div className="flex-1 rounded-3xl">
-              <img src={reviewsPerson} alt="" className="p-16 rounded-3xl" />
+            <div className="flex justify-center items-center">
+            <div className="flex-1 object-cover w-[480px] h-[500px] overflow-hidden">
+              <img
+                src={reviewsPerson}
+                alt="Review Person"
+                className=" object-contain p-4 rounded-[30px]"
+              />
             </div>
+          </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -258,9 +264,15 @@ const ReviewsSlider = () => {
               </div>
             </div>
 
-            <div className="flex-1 rounded-3xl">
-              <img src={reviewsPerson} alt="" className="p-16 rounded-3xl" />
+            <div className="flex justify-center items-center">
+            <div className="flex-1 object-cover w-[480px] h-[500px] overflow-hidden">
+              <img
+                src={reviewsPerson}
+                alt="Review Person"
+                className=" object-contain p-4 rounded-[30px]"
+              />
             </div>
+          </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -371,9 +383,15 @@ const ReviewsSlider = () => {
               </div>
             </div>
 
-            <div className="flex-1 rounded-3xl">
-              <img src={reviewsPerson} alt="" className="p-16 rounded-3xl" />
+            <div className="flex justify-center items-center">
+            <div className="flex-1 object-cover w-[480px] h-[500px] overflow-hidden">
+              <img
+                src={reviewsPerson}
+                alt="Review Person"
+                className=" object-contain p-4 rounded-[30px]"
+              />
             </div>
+          </div>
           </div>
         </SwiperSlide>
 
