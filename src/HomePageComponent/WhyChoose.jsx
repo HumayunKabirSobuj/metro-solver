@@ -36,7 +36,7 @@ const WhyChoose = () => {
 
         <div className="group relative mx-auto flex h-10 w-max cursor-pointer justify-center">
           {/* Hover button */}
-          <button className="text-5xl font-medium origin-center rotate-[4deg] text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 px-14 flex items-center">
+          <button className="text-5xl font-medium origin-center rotate-[4deg] text-white rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 px-14 flex items-center">
             24/7 Customer Service
           </button>
           {/* Hover Text */}
