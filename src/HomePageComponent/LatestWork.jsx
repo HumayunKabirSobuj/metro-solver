@@ -36,7 +36,8 @@ const LatestWork = () => {
         <Swiper
           slidesPerView={4.5}
           spaceBetween={20}
-          autoplay={{ delay: 5000 }}
+          
+          
           loop={true}
           pagination={{ clickable: true }}
           navigation={true}
