@@ -45,31 +45,31 @@ const FAQSection = () => {
           </div>
 
           <div className="space-y-4">
-            <div className=" text-[#9FA3AA] text-2xl font-semibold">
+            <div className=" text-[#9FA3AA] text-lg lg:text-2xl font-normal lg:font-semibold">
               • Digital Marketing
             </div>
-            <div className=" text-[#9FA3AA] text-2xl font-semibold">
+            <div className=" text-[#9FA3AA] text-lg lg:text-2xl font-normal lg:font-semibold">
               • Web & Software Development
             </div>
-            <div className=" text-[#9FA3AA] text-2xl font-semibold">
+            <div className=" text-[#9FA3AA] text-lg lg:text-2xl font-normal lg:font-semibold">
               • Graphic Design & Logo
             </div>
-            <div className=" text-[#9FA3AA] text-2xl font-semibold">
+            <div className=" text-[#9FA3AA] text-lg lg:text-2xl font-normal lg:font-semibold">
               • Multimedia & Video Editing
             </div>
-            <div className=" text-[#9FA3AA] text-2xl font-semibold">
+            <div className=" text-[#9FA3AA] text-lg lg:text-2xl font-normal lg:font-semibold">
               • Creative Writing Solutions
             </div>
-            <div className=" text-[#9FA3AA] text-2xl font-semibold">
+            <div className=" text-[#9FA3AA] text-lg lg:text-2xl font-normal lg:font-semibold">
               • E-Commerce Solutions
             </div>
-            <div className=" text-[#9FA3AA] text-2xl font-semibold">
+            <div className=" text-[#9FA3AA] text-lg lg:text-2xl font-normal lg:font-semibold">
               • Refund, Earn & Cancel Policies
             </div>
-            <div className=" text-[#9FA3AA] text-2xl font-semibold">
+            <div className=" text-[#9FA3AA] text-lg lg:text-2xl font-normal lg:font-semibold">
               • Getting Started & General Info
             </div>
-            <div className=" text-[#9FA3AA] text-2xl font-semibold">
+            <div className=" text-[#9FA3AA] text-lg lg:text-2xl font-normal lg:font-semibold">
               • General Policies & Customer Support
             </div>
           </div>

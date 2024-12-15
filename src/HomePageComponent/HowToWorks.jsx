@@ -11,8 +11,8 @@ const HowToWorks = () => {
   return (
     <div className="mt-24  text-white">
       <div className="text-center">
-        <h2 className="text-6xl font-semibold text-white">How To Works?</h2>
-        <p className="text-[#F3F3F4] text-lg font-normal mt-4 w-[40rem]]">
+        <h2 className="lg:text-6xl text-3xl font-semibold text-white">How To Works?</h2>
+        <p className="text-[#F3F3F4] text-base lg:text-lg font-normal mt-4 w-[40rem]]">
           Based on the description of Metro Solver and the image provided, here
           is a 6- <br />
           step process that Metro Solver uses to scale a customers business
@@ -20,10 +20,10 @@ const HowToWorks = () => {
       </div>
       <div className="flex relative justify-center py-12">
         <img src={vid} alt="vid" />
-        <div className="absolute border-8 mt-[270px] border-[#fff] rounded-full w-[120px] flex justify-center items-center ">
+        <div className="absolute border-4 lg:border-8 mt-16 lg:mt-[270px] border-[#fff] rounded-full w-[50px] lg:w-[120px] flex justify-center items-center ">
           <img src={circle} alt="circle" />
         </div>
-        <div className="absolute mt-[300px] ml-3 flex justify-center items-center ">
+        <div className="absolute mt-20 lg:mt-[300px] lg:w-full w-[20px] ml-1 lg:ml-3 flex justify-center items-center ">
           <img src={play} alt="play" />
         </div>
       </div>

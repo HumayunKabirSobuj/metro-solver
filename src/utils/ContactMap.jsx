@@ -35,11 +35,11 @@ const ContactMap = () => {
         </div>
 
         {/* Contact Information Card */}
-        <div className="absolute top-[15%] right-[10%] w-[485px] bg-gray-800 text-white p-6 rounded-xl shadow-lg">
-          <h3 className="text-2xl font-bold  text-white"><span className='border-2 border-[#C16EFD] p-2 rounded-full'>#1</span> Metro Solver</h3>
+        <div className="absolute top-[15%] right-[10%] w-[211px] lg:w-[485px] bg-gray-800 text-white lg:p-6 p-4 rounded-xl shadow-lg">
+          <h3 className="lg:text-2xl text-base lg:gap-0 font-bold  text-white"><span className='border-2 border-[#C16EFD] p-2 rounded-full'>#1</span> Metro Solver</h3>
           <div className="flex gap-5 items-center">
             <img className="h-5 w-5" src={minilocation} alt="" />
-            <p className="text-[#F3F3F4] text-lg mt-2 ">
+            <p className="text-[#F3F3F4] text-sm lg:text-lg mt-2 ">
               Head office: Metro Solver Limited Grantham Road, London E12 5LX,
               United Kingdom
             </p>
