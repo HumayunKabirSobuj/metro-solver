@@ -9,7 +9,7 @@ const ContactForm = () => {
   return (
     <div className=" p-8 md:p-12 lg:p-16 rounded-lg flex flex-col lg:flex-row items-center justify-between gap-10 lg:mb-[140px]">
       {/* Left Side Content */}
-      <div className="rounded-[30px] p-6 md:p-8 lg:p-10 bg-gradient-to-r from-[#5C258D] to-[#4389A2] shadow-lg text-white flex-1 w-full">
+      <div className="rounded-[30px] p-6 md:p-8 lg:p-10 bg-gradient-to-r from-[#5C258D] to-[#4389A2] shadow-lg text-white flex-1 lg:w-full w-[343px">
         {/* Card Content */}
         <div className="flex justify-center mt-10 mb-7">
           <img src={logo} alt="" />
@@ -28,7 +28,7 @@ const ContactForm = () => {
       </div>
 
       {/* Right Side Contact Form */}
-      <form className="lg:w-1/2 space-y-4 flex-1 w-full">
+      <form className=" space-y-4 flex-1 lg:w-full w-[311px] lg:px-0 px-4">
         {/* Name and Email */}
         <div className="flex flex-col md:flex-row gap-4">
           <div className="w-full">
@@ -106,7 +106,7 @@ const ContactForm = () => {
           </label>
           <textarea
             id="message"
-            rows="7"
+            rows="5"
             placeholder="Message goes in here..."
             className="w-full p-3 rounded-md bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           ></textarea>
@@ -114,9 +114,9 @@ const ContactForm = () => {
 
         {/* Submit Button */}
         <div className="flex justify-center">
-          <button className=" text-xl text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-1 px-32 flex items-center justify-center">
+          <button className=" lg:w-full w-[343px] lg:text-xl text-[14px] text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] lg:py-1 lg:px-32 px-24 flex items-center justify-center ">
             <img src={star} alt="" />
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 lg:h-auto h-[30px]">
               <p>Send </p>
               <p>Message</p>
             </div>
