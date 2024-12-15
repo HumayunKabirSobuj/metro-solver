@@ -20,18 +20,18 @@ const MeetOurAgents = () => {
   return (
     <div className="lg:mb-[140px]">
       <div>
-        <h1 className="text-white lg:text-6xl font-semibold text-center lg:mb-12">
+        <h1 className="text-white lg:text-6xl text-[28px] font-semibold text-center lg:mb-12">
           Meet Our Agents
         </h1>
         {/* Tabs Here */}
         <div className="lg:mb-12">
           <div className="flex items-center justify-center">
-            <div className="flex gap-6  px-6 py-3 rounded-full shadow-lg">
+            <div className="grid lg:grid-cols-6 grid-cols-3 gap-4  px-6 py-3 rounded-full lg:shadow-lg">
               {tabs.map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-6 py-2 text-lg rounded-full transition duration-300 ${
+                  className={`lg:px-6 lg:py-2 lg:text-lg text-[10px] px-[4px] py-[6px] rounded-full transition duration-300 ${
                     activeTab === tab
                       ? "text-white border border-purple-500"
                       : "text-gray-400"
@@ -49,7 +49,7 @@ const MeetOurAgents = () => {
 
         <div className="lg:mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="relative  md:w-[300px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
+          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
             <div className="relative">
               <img
                 src={person1}
@@ -74,7 +74,7 @@ const MeetOurAgents = () => {
             </div>
           </div>
 
-          <div className="relative  md:w-[300px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
+          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
             <div className="relative">
               <img
                 src={person6}
@@ -99,7 +99,7 @@ const MeetOurAgents = () => {
             </div>
           </div>
 
-          <div className="relative  md:w-[300px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
+          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
             <div className="relative">
               <img
                 src={person2}
@@ -124,7 +124,7 @@ const MeetOurAgents = () => {
             </div>
           </div>
 
-          <div className="relative  md:w-[300px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
+          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
             <div className="relative">
               <img
                 src={person5}
@@ -149,7 +149,7 @@ const MeetOurAgents = () => {
             </div>
           </div>
 
-          <div className="relative  md:w-[300px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
+          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
             <div className="relative">
               <img
                 src={person3}
@@ -174,7 +174,7 @@ const MeetOurAgents = () => {
             </div>
           </div>
 
-          <div className="relative  md:w-[300px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
+          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
             <div className="relative">
               <img
                 src={person4}
