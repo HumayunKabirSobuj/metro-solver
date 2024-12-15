@@ -6,6 +6,7 @@ import Navbar from '../utils/Navbar';
 import LatestWork from '../HomePageComponent/LatestWork';
 import OurService from '../HomePageComponent/OurService';
 import ContactForm from '../HomePageComponent/ContactForm';
+import Footer from '../utils/Footer';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         <ReviewsSlider></ReviewsSlider>
         <OurService></OurService>
         <ContactForm></ContactForm>
+        <Footer />
       </div>
     </div>
   );
