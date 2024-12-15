@@ -1,3 +1,5 @@
+
+
 import { useState } from "react";
 import person1 from "../utilsPhoto/person1.png";
 import person2 from "../utilsPhoto/person2.png";
@@ -5,7 +7,10 @@ import person3 from "../utilsPhoto/person3.png";
 import person4 from "../utilsPhoto/person4.png";
 import person5 from "../utilsPhoto/person5.png";
 import person6 from "../utilsPhoto/person6.png";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 const MeetOurAgents = () => {
   const [activeTab, setActiveTab] = useState("Creative");
 
@@ -17,16 +22,31 @@ const MeetOurAgents = () => {
     "Grow Marketing",
     "Technology",
   ];
+
+  const agents = [
+    { name: "Nayemul Karim", role: "Founder and Director", img: person1 },
+    { name: "Shezan Mahmud", role: "Co-founder and COO", img: person6 },
+    { name: "Mahbubul Karim", role: "Co-founder Group Manager", img: person2 },
+    {
+      name: "Ayesha Siddiqah",
+      role: "Co-founder Innovation Leader",
+      img: person5,
+    },
+    { name: "Latisha Miles", role: "Grow marketing", img: person3 },
+    { name: "Robert Fox", role: "Leadership", img: person4 },
+  ];
+
   return (
     <div className="lg:mb-[140px]">
       <div>
         <h1 className="text-white lg:text-6xl text-[28px] font-semibold text-center lg:mb-12">
           Meet Our Agents
         </h1>
-        {/* Tabs Here */}
+
+        {/* Tabs */}
         <div className="lg:mb-12">
           <div className="flex items-center justify-center">
-            <div className="grid lg:grid-cols-6 grid-cols-3 gap-4  px-6 py-3 rounded-full lg:shadow-lg">
+            <div className="grid lg:grid-cols-6 grid-cols-3 gap-4 px-6 py-3 rounded-full lg:shadow-lg">
               {tabs.map((tab) => (
                 <button
                   key={tab}
@@ -45,171 +65,95 @@ const MeetOurAgents = () => {
             </div>
           </div>
         </div>
-        {/* Cards Here */}
 
-        <div className="lg:mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
-            <div className="relative">
-              <img
-                src={person1}
-                alt="Nayemul Karim"
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
+        {/* Cards Section */}
+        <div className="lg:mb-12">
+          {/* Swiper for smaller devices */}
+          <div className="lg:hidden">
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={1.5}
+              grabCursor={true}
+              loop={true}
+              centeredSlides={true}
+            >
+              {agents.map((agent, index) => (
+                <SwiperSlide key={index}>
+                  <div className="relative lg:w-[405px] lg:h-[450px] h-[300px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
+                    <div className="relative">
+                      <img
+                        src={agent.img}
+                        alt={agent.name}
+                        className=" lg:h-[450px] h-[260px] lg:w-[405px] w-[253px] rounded-2xl"
+                      />
+                    </div>
 
-            <div className="absolute bottom-4 left-4 bg-gray-900 text-white p-3 rounded-lg flex items-center gap-2 shadow-md">
-              <div>
-                <h2 className="lg:text-2xl font-semibold text-white">
-                  Nayemul Karim
-                </h2>
-                <p className="text-[#F3F3F4] text-lg opacity-70">
-                  Founder and Director
-                </p>
-              </div>
+                    <div className="absolute bottom-4 left-0 bg-gray-900 text-white lg:p-3 p-2 rounded-lg flex items-center gap-2 shadow-md w-[200px] rounded-r-full ">
+                      <div className="flex items-center justify-between">
+                        <div className="text-left">
+                          <h2 className="lg:text-2xl text-[10px] font-semibold text-white">
+                            {agent.name}
+                          </h2>
+                          <p className="text-[#F3F3F4] lg:text-lg text-[8px]  opacity-70">
+                            {agent.role}
+                          </p>
+                        </div>
 
-              <div className="w-6 h-6 flex items-center justify-center rounded-full border-2 border-yellow-500">
-                <span className="text-yellow-500 text-lg">✔</span>
-              </div>
-            </div>
+                        <div className="w-6 h-6 rounded-full border-2  border-yellow-500 absolute right-5">
+                          <span className="text-yellow-500 p-1">✔</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
 
-          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
-            <div className="relative">
-              <img
-                src={person6}
-                alt="Nayemul Karim"
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
+          {/* Static Grid for larger devices */}
+          <div className="hidden lg:grid lg:grid-cols-3 gap-8">
+            {agents.map((agent, index) => (
+              <div
+                key={index}
+                className="relative md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4"
+              >
+                <div className="relative">
+                  <img
+                    src={agent.img}
+                    alt={agent.name}
+                    className="w-full h-auto rounded-2xl"
+                  />
+                </div>
 
-            <div className="absolute bottom-4 left-4 bg-gray-900 text-white p-3 rounded-lg flex items-center gap-2 shadow-md">
-              <div>
-                <h2 className="lg:text-2xl font-semibold text-white">
-                  Shezan Mahmud
-                </h2>
-                <p className="text-[#F3F3F4] text-lg opacity-70">
-                  Co-founder and COO
-                </p>
+                <div className="absolute bottom-4 left-4 bg-gray-900 text-white p-3 rounded-lg flex items-center gap-2 shadow-md">
+                  <div>
+                    <h2 className="lg:text-2xl font-semibold text-white">
+                      {agent.name}
+                    </h2>
+                    <p className="text-[#F3F3F4] text-lg opacity-70">
+                      {agent.role}
+                    </p>
+                  </div>
+
+                  <div className="w-6 h-6 flex items-center justify-center rounded-full border-2 border-yellow-500">
+                    <span className="text-yellow-500 text-lg">✔</span>
+                  </div>
+                </div>
               </div>
-
-              <div className="w-6 h-6 flex items-center justify-center rounded-full border-2 border-yellow-500">
-                <span className="text-yellow-500 text-lg">✔</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
-            <div className="relative">
-              <img
-                src={person2}
-                alt="Nayemul Karim"
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
-
-            <div className="absolute bottom-4 left-4 bg-gray-900 text-white p-3 rounded-lg flex items-center gap-2 shadow-md">
-              <div>
-                <h2 className="lg:text-2xl font-semibold text-white">
-                  Mahbubul Karim
-                </h2>
-                <p className="text-[#F3F3F4] text-lg opacity-70">
-                  Co-founder Group Manager
-                </p>
-              </div>
-
-              <div className="w-6 h-6 flex items-center justify-center rounded-full border-2 border-yellow-500">
-                <span className="text-yellow-500 text-lg">✔</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
-            <div className="relative">
-              <img
-                src={person5}
-                alt="Nayemul Karim"
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
-
-            <div className="absolute bottom-4 left-4 bg-gray-900 text-white p-3 rounded-lg flex items-center gap-2 shadow-md">
-              <div>
-                <h2 className="lg:text-2xl font-semibold text-white">
-                  Ayesha Siddiqah
-                </h2>
-                <p className="text-[#F3F3F4] text-lg opacity-70">
-                  Co-founder Innovation Leader
-                </p>
-              </div>
-
-              <div className="w-6 h-6 flex items-center justify-center rounded-full border-2 border-yellow-500">
-                <span className="text-yellow-500 text-lg">✔</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
-            <div className="relative">
-              <img
-                src={person3}
-                alt="Nayemul Karim"
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
-
-            <div className="absolute bottom-4 left-4 bg-gray-900 text-white p-3 rounded-lg flex items-center gap-2 shadow-md">
-              <div>
-                <h2 className="lg:text-2xl font-semibold text-white">
-                  Latisha Miles
-                </h2>
-                <p className="text-[#F3F3F4] text-lg opacity-70">
-                  Grow marketing
-                </p>
-              </div>
-
-              <div className="w-6 h-6 flex items-center justify-center rounded-full border-2 border-yellow-500">
-                <span className="text-yellow-500 text-lg">✔</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative  md:w-[400px] rounded-2xl bg-gray-100 overflow-hidden shadow-lg border-2 border-blue-500 p-4">
-            <div className="relative">
-              <img
-                src={person4}
-                alt="Nayemul Karim"
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
-
-            <div className="absolute bottom-4 left-4 bg-gray-900 text-white p-3 rounded-lg flex items-center gap-2 shadow-md">
-              <div>
-                <h2 className="lg:text-2xl font-semibold text-white">
-                  Robert Fox
-                </h2>
-                <p className="text-[#F3F3F4] text-lg opacity-70">Leadership</p>
-              </div>
-
-              <div className="w-6 h-6 flex items-center justify-center rounded-full border-2 border-yellow-500">
-                <span className="text-yellow-500 text-lg">✔</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
         {/* View More button */}
-
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center lg:mt-12 mt-8">
           <button
-            className="relative px-6 py-3 rounded-[42px] border border-[#6384FC] 
-        text-white font-medium transition-all duration-300"
+            className="relative px-6 py-3 rounded-[42px] border border-[#6384FC] text-white font-medium transition-all duration-300"
             style={{
               background:
                 "linear-gradient(92deg, #1B1B31 0.24%, #2B1E36 56.45%, #1B1B31 99.83%)",
             }}
           >
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="36"
