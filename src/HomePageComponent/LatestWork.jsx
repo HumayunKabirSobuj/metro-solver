@@ -24,15 +24,15 @@ const LatestWork = () => {
   return (
     <div className="text-center mt-28 space-y-4">
       {/* Section Title */}
-      <h1 className="text-6xl text-white font-semibold">Our Latest Works</h1>
-      <p className="text-[#F3F3F4] text-lg font-normal">
+      <h1 className="lg:text-6xl text-3xl text-white font-semibold">Our Latest Works</h1>
+      <p className="text-[#F3F3F4] text-sm lg:text-lg mx-auto w-[340px] lg:w-[590px] font-normal">
         Based on the description of Metro Solver and the image provided, here is
-        a <br /> 6-step process that Metro Solver uses to scale a customer’s
+        a 6-step process that Metro Solver uses to scale a customer’s
         business
       </p>
 
       {/* Swiper Section */}
-      <div className="pt-12 space-y-8 px-10">
+      <div className="pt-12 space-y-8 px-2 lg:px-10">
         <Swiper
           slidesPerView={4.5}
           spaceBetween={20}
@@ -51,7 +51,7 @@ const LatestWork = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className=" shadow-lg w-full h-[18.5rem] object-cover">
+            <div className=" shadow-lg w-[206px] lg:w-full h-[206px] lg:h-[287px] object-cover">
               <img src={img} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
@@ -59,31 +59,31 @@ const LatestWork = () => {
             <img
               src={img1}
               alt="Work 2"
-              className="rounded-xl shadow-lg w-full h-64 object-cover"
+              className="rounded-xl shadow-lg w-40 lg:w-full h-40 lg:h-64 object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src={img2}
               alt="Work 3"
-              className="rounded-xl shadow-lg w-full h-64 object-cover"
+              className="rounded-xl shadow-lg w-40 lg:w-full h-40 lg:h-64 object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src={img3}
               alt="Work 4"
-              className="rounded-xl shadow-lg w-full h-64 object-cover"
+              className="rounded-xl shadow-lg w-40 lg:w-full h-40 lg:h-64 object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <div className=" shadow-lg w-full h-[18.5rem] object-cover">
+            <div className=" shadow-lg w-[206px] lg:w-full h-[206px] lg:h-[287px] object-cover">
               <img src={img4} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
         </Swiper>
         <Swiper
-          slidesPerView={3.5}
+          slidesPerView={3}
           spaceBetween={20}
           loop={true}
           autoplay={{ delay: 5000 }}
@@ -99,22 +99,22 @@ const LatestWork = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className=" shadow-lg w-[405px] h-[42.5rem] object-cover">
+            <div className=" shadow-lg w-[164px] lg:w-[405px] h-[240px] lg:h-[42.5rem] object-cover">
               <img src={img5} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className=" shadow-lg w-[405px] h-[42.5rem] object-cover">
-              <img src={img6} alt="Work 5" className="rounded-3xl" />
+            <div className=" shadow-lg w-full lg:w-[405px] lg:h-[680px] object-cover">
+              <img  src={img6} alt="Work 5" className="rounded-3xl " />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className=" shadow-lg w-full h-[42.5rem] object-cover">
+            <div className=" shadow-lg w-[164px] lg:w-[405px] h-[240px] lg:h-[42.5rem] object-cover">
               <img src={img7} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className=" shadow-lg w-full h-[42.5rem] object-cover">
+            <div className=" shadow-lg w-[164px] lg:w-[405px] h-[260px] lg:h-[42.5rem] object-cover">
               <img src={img8} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
@@ -139,7 +139,7 @@ const LatestWork = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className=" shadow-lg w-full h-[18.5rem] object-cover">
+            <div className=" shadow-lg w-[209px] lg:w-full h-[209px] lg:h-[287px] object-cover">
               <img src={img13} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>
@@ -165,7 +165,7 @@ const LatestWork = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <div className=" shadow-lg w-full h-[18.5rem] object-cover">
+            <div className=" shadow-lg w-[209px] lg:w-full h-[209px] lg:h-[287px] object-cover">
               <img src={img9} alt="Work 5" className="rounded-3xl" />
             </div>
           </SwiperSlide>

@@ -1,25 +1,29 @@
 import star from '../HomePagePhoto/star.png';
 const WhyChoose = () => {
   return (
-    <div className="mt-[900px] items-center flex text-white">
-      <div>
-        <h2 className="text-6xl font-semibold w-[425px] mb-4">
-          Why You Choose Metro Solver?
-        </h2>
-        <p className="text-[#F3F3F4] text-lg font-normal w-[525px] mb-8">
-          We are constantly growing or learning and improving.Enter your
-          personal real estate sanctuary, where finding the ideal home is
-          effortless and comfortable with our assistance.
-        </p>
-        <button className=" text-2xl text-white font-normal rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-4 px-9 flex items-center">
-          <img className="w-8 h-8" src={star} alt="" />
-          Book now
-        </button>
+    <div className="mt-[900px] items-center lg:flex text-white">
+      <div className="lg:block flex items-center">
+        <div>
+          <h2 className="lg:text-6xl text-3xl font-normal lg:font-semibold w-40 lg:w-[425px] mb-4">
+            Why You Choose Metro Solver?
+          </h2>
+          <p className="text-[#F3F3F4] hidden lg:block text-lg font-normal w-[525px] mb-8">
+            We are constantly growing or learning and improving.Enter your
+            personal real estate sanctuary, where finding the ideal home is
+            effortless and comfortable with our assistance.
+          </p>
+        </div>
+        <div>
+          <button className="text-xl lg:text-2xl text-white font-normal rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(105deg,_#6384FC_4.1%,_#C16EFD_54.8%,_#6384FC_92.38%)] py-4 lg:px-9 px-6 flex items-center">
+            <img className="lg:w-8 w-4 h-4 lg:h-8" src={star} alt="" />
+            Book now
+          </button>
+        </div>
       </div>
-      <div className="ml-[8.8rem] space-y-24">
+      <div className="lg:ml-[8.8rem] lg:mt-0 mt-7 ml-0 space-y-24">
         <div className="group relative mx-auto flex h-10 w-max cursor-pointer justify-center">
           {/* Hover button */}
-          <button className="text-5xl mb-7 origin-center rotate-[-8deg] text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 px-14 flex items-center">
+          <button className="lg:text-5xl text-2xl mb-7 origin-center rotate-[-8deg] text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 lg:px-14 px-10 flex items-center">
             Cancel Anytime
           </button>
           {/* Hover Text */}
@@ -36,7 +40,7 @@ const WhyChoose = () => {
 
         <div className="group relative mx-auto flex h-10 w-max cursor-pointer justify-center">
           {/* Hover button */}
-          <button className="text-5xl font-medium origin-center rotate-[4deg] text-white rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 px-14 flex items-center">
+          <button className="lg:text-5xl text-2xl font-medium origin-center rotate-[4deg] text-white rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 lg:px-14 px-10 flex items-center">
             24/7 Customer Service
           </button>
           {/* Hover Text */}
@@ -53,7 +57,7 @@ const WhyChoose = () => {
 
         <div className="group relative mx-auto flex h-10 w-max cursor-pointer justify-center">
           {/* Hover button */}
-          <button className="text-5xl mb-7 origin-center rotate-[-8deg] text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 px-14 flex items-center">
+          <button className="lg:text-5xl text-2xl mb-7 origin-center rotate-[-8deg] text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 lg:px-14 px-10 flex items-center">
             Book Now
           </button>
           {/* Hover Text */}
@@ -70,7 +74,7 @@ const WhyChoose = () => {
 
         <div className="group relative mx-auto flex h-10 w-max cursor-pointer justify-center">
           {/* Hover button */}
-          <button className="text-5xl text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 px-14 flex items-center">
+          <button className="lg:text-5xl text-2xl text-white font-semibold rounded-[100px] border-3 border-[#C16EFD] bg-[linear-gradient(90deg,_#5C258D_0%,_#4389A2_100%)] py-10 lg:px-14 px-10 flex items-center">
             Money Back Guarantee
           </button>
           {/* Hover Text */}
